@@ -78,7 +78,7 @@
 
                 <!-- Project Card 1: Todo App CLI -->
                 <div class="bg-secondary p-6 rounded-xl shadow-lg hover:shadow-primary/50 transition duration-300 transform hover:scale-[1.01]">
-                    <h3 class="text-2xl font-semibold mb-2 text-white">E-commerce REST API</h3>
+                    <h3 class="text-2xl font-semibold mb-2 text-white">Todo App CLI</h3>
                     <p class="text-sm text-gray-400 mb-4">
                         A command line interface app built using python to store, edit and delete user todos.
                     </p>
