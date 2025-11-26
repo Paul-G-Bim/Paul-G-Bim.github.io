@@ -137,7 +137,7 @@
 
         <!-- Footer -->
         <footer class="mt-20 pt-8 border-t border-gray-700 text-center text-gray-500">
-            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2025 Paul-G-Bim. All rights reserved.</p>
         </footer>
 
     </div>
