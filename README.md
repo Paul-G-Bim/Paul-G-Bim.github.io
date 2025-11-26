@@ -58,7 +58,7 @@
                 </a>
 
                 <!-- LinkedIn Link -->
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/paul-grant-b0846933b/" target="_blank" rel="noopener noreferrer"
                     class="text-gray-400 hover:text-primary transition duration-300 flex items-center group">
                     <!-- LinkedIn Icon (Inline SVG) -->
                     <svg class="h-8 w-8 group-hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
