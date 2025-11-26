@@ -85,7 +85,7 @@
                     <div class="space-y-3">
                         <p class="text-gray-300">
                             <span class="font-medium text-primary">Technologies:</span>
-                            Python, Django REST Framework, PostgreSQL, Docker
+                            Python
                         </p>
                         <a href="https://github.com/Paul-G-Bim/todo-cli/blob/master/main.py" target="_blank" rel="noopener noreferrer"
                             class="inline-block text-primary font-medium hover:text-white hover:bg-primary px-3 py-1 rounded-lg border border-primary transition duration-300">
