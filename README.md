@@ -76,18 +76,18 @@
             <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-                <!-- Project Card 1: E-commerce API -->
+                <!-- Project Card 1: Todo App CLI -->
                 <div class="bg-secondary p-6 rounded-xl shadow-lg hover:shadow-primary/50 transition duration-300 transform hover:scale-[1.01]">
                     <h3 class="text-2xl font-semibold mb-2 text-white">E-commerce REST API</h3>
                     <p class="text-sm text-gray-400 mb-4">
-                        A full-featured backend for an online store, handling user authentication, product catalogs, and order processing.
+                        A command line interface app built using python to store, edit and delete user todos.
                     </p>
                     <div class="space-y-3">
                         <p class="text-gray-300">
                             <span class="font-medium text-primary">Technologies:</span>
                             Python, Django REST Framework, PostgreSQL, Docker
                         </p>
-                        <a href="https://github.com/yourusername/ecommerce-api" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/Paul-G-Bim/todo-cli/blob/master/main.py" target="_blank" rel="noopener noreferrer"
                             class="inline-block text-primary font-medium hover:text-white hover:bg-primary px-3 py-1 rounded-lg border border-primary transition duration-300">
                             View on GitHub &rarr;
                         </a>
