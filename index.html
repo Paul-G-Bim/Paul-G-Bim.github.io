@@ -26,17 +26,35 @@
     <style>
         /* Define the Inter font for better typography */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        /* NEW ANIMATION CSS FOR HISTOGRAM MENU */
+        
+        /* 1. Ensure smooth movement */
+        .histogram-bar {
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        /* 2. When the button is hovered, target all bars */
+        .histogram-btn:hover .histogram-bar {
+            /* Move all bars slightly up (1 unit on the SVG scale) */
+            transform: translateY(-1px);
+        }
+        
+        /* 3. Add an extra pulse to the medium bar on hover (optional, for visual flair) */
+        .histogram-btn:hover .histogram-bar:nth-child(2) {
+            transform: translateY(-3px); /* Move the middle bar up higher */
+        }
     </style>
 </head>
 <body class="bg-bg-main text-white font-sans min-h-screen">
     <div id="menu-overlay" class="fixed inset-0 z-40 bg-black bg-opacity-70 transition-opacity duration-300 hidden" onclick="toggleMenu()"></div>
 
-    <button class="fixed top-6 right-6 z-50 p-2 rounded-full bg-primary hover:bg-primary/90 transition duration-300 shadow-xl" onclick="toggleMenu()">
+    <button class="fixed top-6 right-6 z-50 p-2 rounded-full bg-primary hover:bg-primary/90 transition duration-300 shadow-xl histogram-btn" onclick="toggleMenu()">
         <svg class="w-8 h-8" viewBox="0 0 24 24" aria-hidden="true">
             <title>Open Menu</title>
-            <rect x="4" y="15" width="4" height="6" rx="0.5" /> 
-            <rect x="10" y="9" width="4" height="12" rx="0.5" /> 
-            <rect x="16" y="3" width="4" height="18" rx="0.5" /> 
+            <rect x="4" y="15" width="4" height="6" rx="0.5" fill="#ffffff" class="histogram-bar" /> 
+            <rect x="10" y="9" width="4" height="12" rx="0.5" fill="#ffffff" class="histogram-bar" /> 
+            <rect x="16" y="3" width="4" height="18" rx="0.5" fill="#ffffff" class="histogram-bar" /> 
         </svg>
     </button>
 
