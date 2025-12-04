@@ -172,8 +172,30 @@
         <!-- CTA Section -->
         <section class="mt-10 text-center bg-primary/20 p-8 rounded-xl shadow-lg">
             <h2 class="text-3xl font-bold mb-4 text-primary">Let's Work Together</h2>
-            <p class="text-gray-300 max-w-2xl mx-auto mb-6">Interested in collaborating or need help with a Python or data analytics project? I'm always open to new opportunities and challenges.</p>
-            <a href="mailto:paulgrant@example.com" class="bg-primary hover:bg-white hover:text-primary transition px-6 py-3 rounded-lg font-semibold">Contact Me</a>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-6">Interested in collaborating? Use the form below, and your message will be forwarded directly to my private inbox.</p>
+    
+            <form action="https://formspree.io/f/mnnezalo" method="POST" class="max-w-md mx-auto space-y-4 text-left mt-6">
+        
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Your Email</label>
+                    <input type="email" name="_replyto" id="email" required
+                           class="w-full p-3 rounded-lg bg-bg-main border border-gray-600 text-white focus:ring-primary focus:border-primary">
+                </div>
+        
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                    <textarea name="message" id="message" rows="4" required
+                              class="w-full p-3 rounded-lg bg-bg-main border border-gray-600 text-white focus:ring-primary focus:border-primary"></textarea>
+                </div>
+        
+                <input type="hidden" name="_gotcha" style="display:none">
+        
+                <button type="submit" 
+                        class="w-full bg-primary hover:bg-white hover:text-primary transition px-6 py-3 rounded-lg font-semibold">
+                    Send Message
+                </button>
+        
+            </form>
         </section>
 
         <!-- Footer -->
