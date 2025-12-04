@@ -29,12 +29,44 @@
     </style>
 </head>
 <body class="bg-bg-main text-white font-sans min-h-screen">
+    <div id="menu-overlay" class="fixed inset-0 z-40 bg-black bg-opacity-70 transition-opacity duration-300 hidden lg:hidden" onclick="toggleMenu()"></div>
+
+    <button class="fixed top-6 right-6 z-50 p-2 rounded-full bg-primary hover:bg-primary/90 transition duration-300 shadow-xl lg:hidden" onclick="toggleMenu()">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <title>Open Menu</title>
+            <rect x="3" y="16" width="6" height="5" rx="1"/>
+            <rect x="9" y="10" width="6" height="11" rx="1"/>
+            <rect x="15" y="4" width="6" height="17" rx="1"/>
+        </svg>
+    </button>
+
+    <nav id="mobile-menu" class="fixed top-0 right-0 w-64 h-full bg-secondary z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl lg:hidden">
+        
+        <div class="p-6">
+            <h3 class="text-2xl font-bold text-primary mb-8 border-b border-gray-700 pb-3">Navigation</h3>
+            <ul class="space-y-4">
+                <li>
+                    <a href="#about" onclick="toggleMenu()" class="block text-xl text-gray-300 hover:text-primary transition duration-200">About (Home)</a>
+                </li>
+                <li>
+                    <a href="#python-projects" onclick="toggleMenu()" class="block text-xl text-gray-300 hover:text-primary transition duration-200">Python Projects</a>
+                </li>
+                <li>
+                    <a href="#data-analytics" onclick="toggleMenu()" class="block text-xl text-gray-300 hover:text-primary transition duration-200">Data Analytics</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="toggleMenu()" class="block text-xl text-gray-300 hover:text-primary transition duration-200">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    
+    </nav>
 
     <!-- Main Container -->
     <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
 
         <!-- Header and Introduction -->
-        <header class="text-center py-12 mb-10 bg-secondary rounded-xl shadow-2xl">
+        <header id="about" class="text-center py-12 mb-10 bg-secondary rounded-xl shadow-2xl">
 
             <!-- Profile Photo -->
             <div class="flex justify-center mb-6">
@@ -76,7 +108,7 @@
         </header>
 
         <!-- Projects Section -->
-        <section class="mt-16">
+        <section id="python-projects" class="mt-16">
             <h2 class="text-4xl font-bold text-center mb-10 text-primary">Python Projects</h2>
 
             <!-- Projects Grid -->
@@ -145,7 +177,7 @@
         </section>
 
          <!-- Data Analytics Projects -->
-        <section class="mt-20">
+        <section id="data-analytics" class="mt-20">
             <h2 class="text-4xl font-bold text-center mb-10 text-primary">Data Analytics Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 <div class="bg-secondary p-6 rounded-xl shadow-lg hover:shadow-primary/50 transition">
@@ -170,7 +202,7 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="mt-10 text-center bg-primary/20 p-8 rounded-xl shadow-lg">
+        <section id="contact" class="mt-10 text-center bg-primary/20 p-8 rounded-xl shadow-lg">
             <h2 class="text-3xl font-bold mb-4 text-primary">Let's Work Together</h2>
             <p class="text-gray-300 max-w-2xl mx-auto mb-6">Interested in collaborating? Use the form below, and your message will be forwarded directly to my private inbox.</p>
     
@@ -204,5 +236,22 @@
         </footer>
 
     </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const overlay = document.getElementById('menu-overlay');
+            
+            // Toggle the 'translate-x-full' class to slide the menu in/out
+            menu.classList.toggle('translate-x-full');
+            
+            // Toggle the 'hidden' class on the overlay
+            overlay.classList.toggle('hidden');
+            
+            // Optional: Prevent scrolling when the menu is open
+            document.body.classList.toggle('overflow-hidden');
+        }
+    </script>
+    
 </body>
 </html>
